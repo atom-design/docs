@@ -1,0 +1,24 @@
+{
+  "name": "atom-design-docs",
+  "version": "1.0.0",
+  "description": "the docs for atom-design library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-design/docs.git"
+  },
+  "keywords": [
+    "atom",
+    "design",
+    "docs"
+  ],
+  "author": "Reming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom-design/docs/issues"
+  },
+  "homepage": "https://github.com/atom-design/docs#readme"
+}
