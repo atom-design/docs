@@ -4,7 +4,7 @@
       <div class="doc-demo">
         <doc-title title="安装教程"></doc-title>
         <doc-code title="npm/yarn 安装">cnpm install atom-design --save<br/>yarn add atom-design</doc-code>
-        <doc-code title="CDN 引入">// css引入<br/><start-tag name="link" :attrs="[{key: 'ref', value: 'stylesheet'}, {key: 'href', value: 'https://unpkg.com/atom-design@1.0.3/lib/style.css'}]"></start-tag><br/>// js引入<br/><start-tag name="script" :attrs="[{key: 'type', value: 'text/javascript'}, {key: 'src', value: 'https://unpkg.com/atom-design@1.0.3/lib/atomD.min.js'}]"></start-tag><end-tag name="script"></end-tag></doc-code>
+        <doc-code title="CDN 引入">// css引入<br/><start-tag name="link" :attrs="[{key: 'ref', value: 'stylesheet'}, {key: 'href', value: 'https://unpkg.com/atom-design@1.0.4/lib/style.css'}]"></start-tag><br/>// js引入<br/><start-tag name="script" :attrs="[{key: 'type', value: 'text/javascript'}, {key: 'src', value: 'https://unpkg.com/atom-design@1.0.4/lib/atomD.min.js'}]"></start-tag><end-tag name="script"></end-tag></doc-code>
       </div>
     </div>
   </div>
