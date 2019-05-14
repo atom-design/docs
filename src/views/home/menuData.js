@@ -7,7 +7,7 @@ export default [{
   isChild: true,
   childs: [{
     text: '安装',
-    routeName: 'install'
+    routeName: 'installation'
   },
   {
     text: '使用',

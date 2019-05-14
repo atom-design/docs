@@ -30,9 +30,9 @@ export default new Router({
         }
       },
       {
-        path: 'install',
-        name: 'install',
-        component: resolve => require(['@/views/install'], resolve),
+        path: 'installation',
+        name: 'installation',
+        component: resolve => require(['@/views/installation'], resolve),
         meta: {
           name: '安装'
         }
