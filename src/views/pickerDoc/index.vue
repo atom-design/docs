@@ -4,7 +4,7 @@
       <div class="doc-demo">
         <doc-title title="Picker 选择器" desc="用于提供给用户选择数据"><a class="a-link" href="https://atom-design.github.io/mobile/#/picker/">此测试案例请在移动模式/设备打开</a></doc-title>
         <doc-code title="导入"><span class="blue">import</span> { Picker } <span class="blue">from</span> 'atom-design';</doc-code>
-        <doc-code title="例子">// 基础用法<br/><span class="blue">Picker</span>({<br/>  list: [{<br/>    text: '<span class="red">2019</span>',<br/>    childrens: [1, 2, 3, ...]<br/>  },<br/>  {<br/>    text: '<span class="red">2020</span>'<br/>    childrens: [1, 2, 3, ...]<br/>  }, ...],<br/>  cancelBtn: <span class="green"> </span>{<br/>    text: '取消',<br/>    event: () => {<br/>    // handle event<br/>    }<br/>  },<br/>  submitBtn: <span class="green"> </span>{<br/>    text: '确认',<br/>    event: () => {<br/>    // handle event<br/>    }<br/>  }<br/>})<br/>
+        <doc-code title="例子">// 基础用法<br/><span class="blue">Picker</span>({<br/>  list: [{<br/>    text: '<span class="red">2019</span>',<br/>    childrens: [1, 2, 3, ...]<br/>  },<br/>  {<br/>    text: '<span class="red">2020</span>'<br/>    childrens: [1, 2, 3, ...]<br/>  }, ...],<br/>  cancelBtn: <span class="green"> </span>{<br/>    text: '取消',<br/>    event: (res) => {<br/>    // res为选中的列表数组<br/>    }<br/>  },<br/>  submitBtn: <span class="green"> </span>{<br/>    text: '确认',<br/>    event: (res) => {<br/>    // res选中的列表数组<br/>    }<br/>  }<br/>})<br/>
         </doc-code>
     </div>
     <mobile routerName="picker"></mobile>
@@ -60,7 +60,7 @@ export default {
       },
       {
         name: 'event',
-        desc: '点击事件回调方法',
+        desc: '点击事件回调方法, 第一个参数为选中的数据, 参数数据类型： Array',
         type: 'Function',
         default: '无'
       }]
