@@ -4,7 +4,7 @@
       <div class="doc-demo">
         <doc-title title="Select Box 选择盒子" desc="用于提供给用户选择操作"></doc-title>
         <doc-code title="导入"><span class="blue">import</span> { SelectBox } <span class="blue">from</span> 'atom-design';</doc-code>
-        <doc-code title="例子">// 基础用法<br/><span class="blue">SelectBox</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }],<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>})<br/>
+        <doc-code title="例子">// 基础用法<br/><span class="blue">SelectBox</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }]<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>})<br/>
         </doc-code>
     </div>
     <mobile routerName="selectBox"></mobile>

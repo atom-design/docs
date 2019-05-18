@@ -4,7 +4,7 @@
       <div class="doc-demo">
         <doc-title title="Action Sheet 动作板块" desc="用于弹出系统功能板块与用户交互"></doc-title>
         <doc-code title="导入"><span class="blue">import</span> { ActionSheet } <span class="blue">from</span> 'atom-design';</doc-code>
-        <doc-code title="例子">// 基础用法<br/><span class="blue">ActionSheet</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }],<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>})<br/>
+        <doc-code title="例子">// 基础用法<br/><span class="blue">ActionSheet</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }]<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>})<br/>
         </doc-code>
     </div>
     <mobile routerName="actionSheet"></mobile>
