@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Header 头部导航栏" desc="通过设置一级子节点的插槽名来布局导航栏"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Header } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Header.name, Header);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Header } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Header.name, Header);</doc-code>
         <doc-code title="例子">// 基本用法<br/><start-tag name="atom-header" :attrs="[{key: 'style', value: '自定义样式'}]"></start-tag><br/>  // 布局至左边<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'left'}]"></start-tag><end-tag name="div"></end-tag><br/>  // 布局至右边<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'right'}]"></start-tag><end-tag name="div"></end-tag><br/>  // 布局至中间 <br/><start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'center'}]"></start-tag><end-tag name="div"></end-tag><br/><end-tag name="atom-header"></end-tag><br/>
         </doc-code>
       </div>

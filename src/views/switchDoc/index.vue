@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Switch 开关" desc="通过两互斥对象进行控制开关"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Switch } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Switch.name, Switch);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Switch } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Switch.name, Switch);</doc-code>
         <doc-code title="例子">// v-model绑定Boolean类型变量控制<br/><start-tag name="atom-switch" :attrs="[{key: 'v-model', value: 'switchVar'}]"></start-tag><end-tag name="atom-switch"></end-tag><br/>// 自定义颜色<br/><start-tag name="atom-switch" :attrs="[{key: 'v-model', value: 'switchVar'}, {key: 'color', value: '#ff9933'}]"></start-tag><end-tag name="atom-switch"></end-tag>
         </doc-code>
     </div>

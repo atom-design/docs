@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Pull Gesture 上拉下拉手势" desc="通过上下拉动来做更新、加载事件"><a class="a-link" href="https://atom-design.github.io/mobile/#/pullGesture/">此测试案例请在移动模式/设备打开</a></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Pull } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Pull.name, Pull);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Pull } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Pull.name, Pull);</doc-code>
         <doc-code title="例子">// 基本用法, 需要上下拉动显示的提示项需用slot来指定插槽名称<br/><start-tag name="atom-pull" :attrs="[{key: 'height', value: '指定组件高度'}, {key: 'action', value: '指定动作, 默认both'}, {key: ':maxTopMove', value: '下拉最高高度(px)'}, {key: ':maxBotMove', value: '上拉最高高度(px)'}, {key: ':delay', value: '提示停留时间(ms)'}, {key: '@promptDisplay', value: '提示信息完全显示触发'}, {key: '@touchEnd', value: '拉动放开时触发'}, {key: '@pullEnd', value: '完全执行结束时触发'}]"></start-tag><br/>  // 顶部提示项<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'promptTop'}]"></start-tag><end-tag name="div"></end-tag><br/>  // 底部提示项<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'promptBottom'}]"></start-tag><end-tag name="div"></end-tag><br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}]"></start-tag><end-tag name="div"></end-tag><br/><end-tag name="atom-pull"></end-tag><br/>
         </doc-code>
       </div>

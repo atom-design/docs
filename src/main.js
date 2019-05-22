@@ -8,6 +8,7 @@ import '@/assets/css/common.css'
 import '@/assets/css/iconfont.css'
 
 Vue.use(Vuex)
+console.log(Vue)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

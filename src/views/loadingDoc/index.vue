@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Loading 加载" desc="加载等待"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Loading } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Loading.name, Loading);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Loading } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Loading.name, Loading);</doc-code>
         <doc-code title="例子">// 默认类型<br/><start-tag name="atom-loading" :attrs="[{key: ':type', value: '0'}]"></start-tag><end-tag name="atom-loading"></end-tag><br/>// 自定义radius<br/><start-tag name="atom-loading" :attrs="[{key: ':type', value: '3'}, {key: 'radius', value: '100%'}]"></start-tag><end-tag name="atom-loading"></end-tag><br/>// 自定义颜色<br/><start-tag name="atom-loading" :attrs="[{key: ':type', value: '1'}, {key: 'color', value: '#48D1CC'}]"></start-tag><end-tag name="atom-loading"></end-tag><br/>
         </doc-code>
     </div>

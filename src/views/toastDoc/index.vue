@@ -3,8 +3,8 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Toast 轻提示" desc="用于反馈用户,不中断用户操作的提示信息"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Toast } <span class="blue">from</span> 'atom-design';</doc-code>
-        <doc-code title="例子">// 简单用法<br/><span class="blue">Toast</span>('<span class="red">提示信息</span>')<br/>// 配置<br/><span class="blue">Toast</span>({message: "<span class="red">提示信息</span>", duration: <span class="red">5e2</span>,  position: "<span class="red">bottom</span>"})
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Toast } <span class="blue">from</span> 'atom-design';</doc-code>
+        <doc-code title="例子">// 按需引入<br/><span class="blue">Toast</span>(msg:String|options:Object);<br/>// 全部引入<br/><span class="yellow">this</span>.<span class="blue">$toast</span>(msg:String|options:Object);<br/><br/>// 基础用法<br/><span class="blue">Toast</span>('<span class="red">提示信息</span>');<br/>// 配置<br/><span class="blue">Toast</span>({message: "<span class="red">提示信息</span>", duration: <span class="red">5e2</span>,  position: "<span class="red">bottom</span>"});
         </doc-code>
     </div>
     <mobile routerName="toast"></mobile>

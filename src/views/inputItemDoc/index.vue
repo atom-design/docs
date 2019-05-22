@@ -1,10 +1,10 @@
 <template>
-  <div class="inputItem-doc">
+  <div class="input-item-doc">
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="InputItem 输入条" desc="用于单行文本输入"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { InputItem } <span class="blue">from</span> 'atom-design';<br/>Vue.component(InputItem.name, InputItem);</doc-code>
-        <doc-code title="例子">// 基本用法<br/><start-tag name="atom-inputItem" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'v-model', value: 'inputVal'}]"></start-tag><end-tag name="atom-inputItem"></end-tag><br/>// 禁止清空<br/><start-tag name="atom-inputItem" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: ':canClear', value: 'false'}]"></start-tag><end-tag name="atom-inputItem"></end-tag><br/>// 自定义样式<br/><start-tag name="atom-inputItem" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'style', value: 'color: #108ee9;'}, {key: ':inputStyle', value: `{color: '#108ee9'}`}]"></start-tag><end-tag name="atom-inputItem"></end-tag><br/>// 设置input类型<br/><start-tag name="atom-inputItem" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'type', value: 'number'}]"></start-tag><end-tag name="atom-inputItem"></end-tag><br/>// 设置对齐<br/><start-tag name="atom-inputItem" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'align', value: 'right'}]"></start-tag><end-tag name="atom-inputItem"></end-tag><br/>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { InputItem } <span class="blue">from</span> 'atom-design';<br/>Vue.component(InputItem.name, InputItem);</doc-code>
+        <doc-code title="例子">// 基本用法<br/><start-tag name="atom-input-item" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'v-model', value: 'inputVal'}]"></start-tag><end-tag name="atom-input-item"></end-tag><br/>// 禁止清空<br/><start-tag name="atom-input-item" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: ':canClear', value: 'false'}]"></start-tag><end-tag name="atom-input-item"></end-tag><br/>// 自定义样式<br/><start-tag name="atom-input-item" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'style', value: 'color: #108ee9;'}, {key: ':inputStyle', value: `{color: '#108ee9'}`}]"></start-tag><end-tag name="atom-input-item"></end-tag><br/>// 设置input类型<br/><start-tag name="atom-input-item" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'type', value: 'number'}]"></start-tag><end-tag name="atom-input-item"></end-tag><br/>// 设置对齐<br/><start-tag name="atom-input-item" :attrs="[{key: 'title', value: '默认标题'}, {key: 'placeholder', value: 'Please Input'}, {key: 'align', value: 'right'}]"></start-tag><end-tag name="atom-input-item"></end-tag><br/>
         </doc-code>
       </div>
       <mobile routerName="inputItem"></mobile>
@@ -91,7 +91,7 @@ export default {
     display: inline-block;
   }
 }
-.inputItem-doc {
+.input-item-doc {
   padding: 0 24px 24px 0;
   .doc-title {
     padding: 0 24px;

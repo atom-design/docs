@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Carousel 轮播" desc="用于依次轮播内容"><a class="a-link" href="https://atom-design.github.io/mobile/#/carousel/">此测试案例请在移动模式/设备打开</a></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Carousel } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Carousel.name, Carousel);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Carousel } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Carousel.name, Carousel);</doc-code>
         <doc-code title="例子">// 基本用法<br/><start-tag name="atom-carousel" :attrs="[{key: 'placeholder', value: 'Please Input'}, {key: 'v-model', value: 'carouselVal'}]"></start-tag><br/>  // 自定义内容，每个一级子节点为一个轮播滑块<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}]"></start-tag><end-tag name="div"></end-tag><br/>  <start-tag name="img" :attrs="[{key: 'class', value: 'custom class'}]"></start-tag><end-tag name="img"></end-tag><br/>  <start-tag name="form" :attrs="[{key: 'class', value: 'custom class'}]"></start-tag><end-tag name="form"></end-tag><br/><end-tag name="atom-carousel"></end-tag><br/>
         </doc-code>
       </div>

@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Drawer 抽屉" desc="通过设置一级子节点的插槽名navbar指定导航栏，插槽名content指定内容来设置边缘导航栏, 用于边缘显示导航栏"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Drawer } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Drawer.name, Drawer);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Drawer } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Drawer.name, Drawer);</doc-code>
         <doc-code title="例子">// 基本用法<br/><start-tag name="atom-drawer" :attrs="[{key: 'v-model', value: 'drawerVal'}, {key: 'type', value: 'build-in'}]"></start-tag><br/>  // 指定为导航菜单栏<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'navbar'}]"></start-tag><end-tag name="div"></end-tag><br/>  // 指定为内容页<br/>  <start-tag name="div" :attrs="[{key: 'class', value: 'custom class'}, {key: 'slot', value: 'content'}]"></start-tag><end-tag name="div"></end-tag><br/><end-tag name="atom-drawer"></end-tag><br/>
         </doc-code>
       </div>

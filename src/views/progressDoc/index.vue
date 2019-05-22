@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Progress 进度条" desc="显示进度"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { Progress } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Progress.name, Progress);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Progress } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Progress.name, Progress);</doc-code>
         <doc-code title="例子">// v-model绑定进度（范围0~100）<br/><start-tag name="atom-progress" :attrs="[{key: 'v-model', value: 'progressVar'}]"></start-tag><end-tag name="atom-progress"></end-tag><br/>// 自定义颜色<br/><start-tag name="atom-progress" :attrs="[{key: 'v-model', value: 'progressVar'}, {key: 'color', value: '#ff9933'}]"></start-tag><end-tag name="atom-progress"></end-tag><br/>// 自定义线高<br/><start-tag name="atom-progress" :attrs="[{key: 'v-model', value: 'progressVar'}, {key: 'lineHeight', value: '5px'}]"></start-tag><end-tag name="atom-progress"></end-tag>
         </doc-code>
     </div>

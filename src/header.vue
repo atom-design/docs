@@ -1,6 +1,6 @@
 <template>
   <header id="header" class="clearfix">
-    <a href="#/" id="logo">
+    <a @click="selectTab(0, 'guide')" id="logo">
       <img class="logo-icon" src="@/assets/img/logo.png" alt="">
       <span class="title">Atom Design</span>
     </a>
@@ -58,6 +58,9 @@ export default {
     #header .menu-icon {
       display: none;
     }
+    #logo {
+      cursor: pointer;
+    }
   }
   #header {
     position: relative;
@@ -71,8 +74,7 @@ export default {
       display: flex;
       align-items: center;
       .logo-icon {
-        width: 40px;
-        height: 40px;
+        width: 45px;
       }
       .title {
         margin-left: 10px;

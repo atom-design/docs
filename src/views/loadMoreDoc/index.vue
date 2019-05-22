@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Load More 滚动加载数据" desc="通过设置指令来加载数据"></doc-title>
-        <doc-code title="导入"><span class="blue">import</span> { LoadMore } <span class="blue">from</span> 'atom-design';<br/>Vue.use(LoadMore);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { LoadMore } <span class="blue">from</span> 'atom-design';<br/>Vue.use(LoadMore);</doc-code>
         <doc-code title="例子">// 基本用法<br/><start-tag name="ul" :attrs="[{key: 'v-loadmore', value: 'loadMore'}, {key: 'distance', value: '设置距离滚动完剩余多少px触发loadMore'}]"></start-tag><br/>  <start-tag name="li" :attrs="[{key: 'v-for', value: '(item, index) in dataList'}, {key: ':key', value: 'index'}, {key: 'v-text', value: 'index'}]"></start-tag><end-tag name="li"></end-tag><br/><end-tag name="ul"></end-tag><br/>// loadMore处理数据加载<br/>loadMore () {<br/>  Array.prototype.push(this.dataList, nextList)<br/>}</doc-code>
       </div>
       <mobile routerName="loadMore"></mobile>
