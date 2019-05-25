@@ -13,6 +13,16 @@
 </template>
 
 <style lang="postcss" scoped>
+  @media only screen and (max-width: 768px) {
+    .support-wrapper {
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .support-wrapper {
+      width: 60%;
+    }
+  }
   .support-wrapper {
     padding: 0 24px 24px;
     height: 100vh;
@@ -32,7 +42,7 @@
       line-height: 32px;
     }
     .support-list {
-      margin-top: 10px;
+      margin-top: 20px;
       .support-item {
         display: inline-block;
         width: 100px;

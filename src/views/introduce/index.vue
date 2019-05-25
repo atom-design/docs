@@ -37,7 +37,7 @@
       .title-desc {
         text-align: center;
         line-height: 50px;
-        font-size: 16px;
+        font-size: 14px;
         color: #666;
       }
     }

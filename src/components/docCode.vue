@@ -27,7 +27,7 @@ export default {
   .doc-code {
     padding-left: 24px;
     h2 {
-      font-weight: normal;
+      font-size: 16px;
     }
     .code {
       overflow-x: auto;

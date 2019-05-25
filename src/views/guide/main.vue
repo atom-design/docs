@@ -55,23 +55,24 @@ export default {
       width: 55%;
       h1 {
         margin-top: 0;
-        font-size: 60px;
+        font-size: 46px;
         line-height: 80px;
         color: #101010;
       }
       p {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 36px;
         color: #314659;
       }
       .btn {
-        width: 120px;
-        height: 40px;
-        line-height: 40px;
+        margin-top: 50px;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
         text-align: center;
         background: #0099FF;
         color: white;
-        font-size: 18px;
+        font-size: 14px;
         border-radius: 6px;
         cursor: pointer;
       }

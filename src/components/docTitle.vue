@@ -15,6 +15,9 @@ export default {
 <style lang="postcss" scoped>
   .doc-title {
     padding-left: 24px;
+    h1 {
+      font-size: 18px;
+    }
     .a-link {
       color: #0033ff;
       text-decoration: underline;

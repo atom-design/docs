@@ -79,7 +79,7 @@ export default {
     ul {
       border-right: 1px solid #f0f1f2;
       li {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 50px;
         box-sizing: border-box;
         &:first-child .menu-item:hover, &:nth-child(2) .drop-list .drop-item:hover{
@@ -122,7 +122,7 @@ export default {
             .comp-item {
               position: relative;
               padding-left: 120px;
-              font-size: 14px;
+              font-size: 12px;
               &:hover {
                 color: #0099ff;
               }
