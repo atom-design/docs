@@ -15,6 +15,10 @@ export default [{
   }]
 },
 {
+  text: '支持 / 赞助',
+  routeName: 'support'
+},
+{
   text: '组件',
   isChild: true,
   childs: [{

@@ -5,11 +5,11 @@
       <div class="title">Atom Design</div>
       <div class="title-desc">基于Vue2.0的移动端组件库</div>
     </div>
-    <h1>简介</h1>
+    <h1 class="title">简介</h1>
     <div class="desc">
       一套易用、CSS图标、可定制的组件库
     </div>
-    <h1>考虑到的因素</h1>
+    <h1 class="title">考虑到的因素</h1>
     <div class="desc">
       <ul>
         <li>1、图标的考虑: 对于组件库自带的图标一开始是打算用svg, 但是考虑到性能, 使用到的图标并非很多, 后面决定还是直接用css绘制。</li>
@@ -41,9 +41,12 @@
         color: #666;
       }
     }
+    .title {
+      font-size: 18px;
+    }
     .desc {
-      font-size: 16px;
-      line-height: 36px;
+      font-size: 14px;
+      line-height: 30px;
     }
   }
 </style>

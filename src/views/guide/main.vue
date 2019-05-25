@@ -6,15 +6,16 @@
         <p>如果您喜欢可自定义的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套简单、易用的组件库。</p>
         <div class="btn" @click="jumpMobile">立即体验</div>
       </div>
+      <atom-model></atom-model>
     </div>
   </div>
 </template>
 
 <script type="text/javascript">
-import mobileModel from './mobileModel.vue'
+import atomModel from './atomModel.vue'
 export default {
   components: {
-    mobileModel
+    atomModel
   },
   methods: {
     jumpMobile () {
@@ -42,6 +43,8 @@ export default {
 #guide-wrapper {
   .main-page {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 35px 46px 0;
     box-sizing: border-box;
     .text-wrapper {

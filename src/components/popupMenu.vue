@@ -18,7 +18,7 @@
     },
     methods: {
       jumpGithub () {
-        window.open('https://github.com/Reming960227/atom-design')
+        window.open('https://github.com/reming0227/atom-design')
       },
       selectTab (idx, routeName) {
         this.$emit('jumpRoute', idx, routeName)

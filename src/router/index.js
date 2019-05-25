@@ -46,6 +46,14 @@ export default new Router({
         }
       },
       {
+        path: 'support',
+        name: 'support',
+        component: resolve => require(['@/views/support'], resolve),
+        meta: {
+          name: '支持/赞助'
+        }
+      },
+      {
         path: 'button',
         name: 'buttonDoc',
         component: resolve => require(['@/views/buttonDoc'], resolve),
