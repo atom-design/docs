@@ -2,7 +2,7 @@
   <div class="support-wrapper">
     <div class="title">赞助研发</div>
     <div class="desc">
-      atom-design采用MIT的开源协议，是完全免费的。 但是项目的长期维护是需要花费很多精力和时间，需要一定的资金支持才能持续项目的维护，您可以通过一下的方式支持我们。
+      atom-design采用MIT的开源协议，是完全免费的。 但是项目的长期维护是需要花费很多精力和时间，需要一定的资金支持才能持续项目的维护，您可以通过以下的方式支持我们。
     </div>
     <div class="title">赞助方式</div>
     <ul class="support-list">
@@ -58,8 +58,9 @@
         .zfb-qrcode {
           display: none;
           position: absolute;
-          top: 0;
-          left: 50px;
+          top: 80px;
+          left: 50%;
+          transform: translate3d(-50%, 0, 0);
           width: 200px;
           height: 200px;
           box-shadow: 0 0 10px #ccc;

@@ -53,8 +53,11 @@
         line-height: 45px;
         text-align: center;
       }
-      .menu-item:first-child {
+      .menu-item {
         border-bottom: 1px solid #f0f1f2;
+      }
+      .menu-item:last-child {
+        border-bottom: none;
       }
       .select {
         color: #0099FF;

@@ -6,7 +6,6 @@
         <p>如果您喜欢可自定义的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套简单、易用的组件库。</p>
         <div class="btn" @click="jumpMobile">立即体验</div>
       </div>
-      <atom-model></atom-model>
     </div>
   </div>
 </template>
@@ -32,6 +31,7 @@ export default {
       height: 580px;
       .text-wrapper {
         float: right;
+        margin-top: 0!important;
         h1 {
           display: none;
         }
@@ -65,7 +65,7 @@ export default {
         color: #314659;
       }
       .btn {
-        margin-top: 50px;
+        margin-top: 20px;
         width: 100px;
         height: 32px;
         line-height: 32px;
