@@ -77,12 +77,13 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.yellowRotate, .redRotate {
+  transition: transform 1s linear;
+}
 svg:hover .yellowRotate {
   transform: scale3d(1.5, 1.5, 1) translate3d(-200px, -10px, 0);
-  transition: transform 1s linear;
 }
 svg:hover .redRotate {
   transform: scale3d(0.5, 0.5, 1) translate3d(300px, 100px, 0);
-  transition: transform 1s linear;
 }
 </style>
