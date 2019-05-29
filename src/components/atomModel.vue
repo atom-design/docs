@@ -20,10 +20,10 @@
         </radialGradient>
       </defs>
       <ellipse cx="150" cy="150" rx="120" ry="50" stroke="black" fill="transparent"/>
-      <circle cx="140" cy="220" r="13" fill="url(#redGradient)" class="rotate"></circle>
+      <circle cx="140" cy="220" r="13" fill="url(#redGradient)" class="redRotate"></circle>
       <circle id="lightBlue" r="22" fill="url(#lightblueGradient)"></circle>
       <circle cx="150" cy="137" r="35" fill="url(#blueGradient)" class="rotate"></circle>
-      <circle cx="230" cy="60" r="25" fill="url(#yellowGradient)" class="yellowRotate"></circle>
+      <circle cx="250" cy="80" r="20" fill="url(#yellowGradient)" class="yellowRotate"></circle>
     </svg>
   </div>
 </template>
@@ -77,10 +77,12 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-#atom-model {
-  .yellowRotate:hover {
-    transform: scale3d(0.5, 0.5, 0);
-    transition: transform 1s linear;
-  }
+svg:hover .yellowRotate {
+  transform: scale3d(1.2, 1.2, 1) translate3d(-200px, -40px, 0);
+  transition: transform 1s linear;
+}
+svg:hover .redRotate {
+  transform: scale3d(0.5, 0.5, 1) translate3d(300px, 100px, 0);
+  transition: transform 1s linear;
 }
 </style>

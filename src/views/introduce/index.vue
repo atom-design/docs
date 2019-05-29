@@ -41,6 +41,7 @@ export default {
     .atom-model {
       display: flex;
       justify-content: center;
+      transform: scale3d(0.9, 0.9, 1);
     }
     .title {
       font-size: 26px;

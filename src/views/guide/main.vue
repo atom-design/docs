@@ -45,12 +45,14 @@ export default {
   .main-page {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 0 100px 0 60px;
+    justify-content: center;
+    padding: 0 70px;
+    .text-wrapper {
+      margin-right: 80px;
+    }
     .atom-model {
       display: inline-block;
       margin: 100px 150px 0 0;
-      transform: scale3d(1.1, 1.1, 1);
     }
   }
 }
@@ -62,7 +64,7 @@ export default {
       float: left;
       min-width: 300px;
       max-width: 500px;
-      margin-top: 80px;
+      margin-top: 120px;
       width: 55%;
       h1 {
         margin-top: 0;
