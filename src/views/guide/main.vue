@@ -46,9 +46,16 @@ export default {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    padding: 0 70px;
+    padding: 30px 0;
+    margin: 30px 50px;
+    box-shadow: 0 0 20px #f0f1f2;
+    &:hover {
+      box-shadow: 0 0 20px #ccc;
+    }
+    border-radius: 5px;
     .text-wrapper {
       margin-right: 80px;
+      padding: 50px 0 0 50px;
     }
     .atom-model {
       display: inline-block;
@@ -60,11 +67,11 @@ export default {
 #guide-wrapper {
   .main-page {
     box-sizing: border-box;
+    overflow: hidden;
     .text-wrapper {
       float: left;
       min-width: 300px;
       max-width: 500px;
-      margin-top: 120px;
       width: 55%;
       h1 {
         margin-top: 0;
