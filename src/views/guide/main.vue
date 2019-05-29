@@ -1,6 +1,7 @@
 <template>
   <div id="guide-wrapper">
     <div class="main-page">
+      <atom-model class="atom-model"></atom-model>
       <div class="text-wrapper">
         <h1>Atom Design</h1>
         <p>如果您喜欢可自定义的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套简单、易用的组件库。</p>
@@ -11,7 +12,7 @@
 </template>
 
 <script type="text/javascript">
-import atomModel from './atomModel.vue'
+import atomModel from '@/components/atomModel.vue'
 export default {
   components: {
     atomModel
@@ -29,8 +30,9 @@ export default {
   #guide-wrapper {
     .main-page {
       height: 580px;
+      padding: 0 50px;
       .text-wrapper {
-        float: right;
+        float: left;
         margin-top: 0!important;
         h1 {
           display: none;
@@ -39,16 +41,25 @@ export default {
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  .main-page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 100px 0 60px;
+    .atom-model {
+      display: inline-block;
+      margin: 100px 150px 0 0;
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+}
 
 #guide-wrapper {
   .main-page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 35px 46px 0;
     box-sizing: border-box;
     .text-wrapper {
-      float: right;
+      float: left;
       min-width: 300px;
       max-width: 500px;
       margin-top: 80px;

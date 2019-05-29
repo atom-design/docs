@@ -39,6 +39,9 @@ export default {
       code {
         line-height: 24px;
       }
+      &:hover {
+        box-shadow:  0 0 20px #eee;
+      }
     }
   }
 </style>

@@ -56,6 +56,9 @@
       border: 1px solid #f0f1f2;
       color: #555;
       font-size: 15px;
+      &:hover {
+        box-shadow:  0 0 20px #eee;
+      }
       th, td {
         border: 1px solid #f0f1f2;
       }

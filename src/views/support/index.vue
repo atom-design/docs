@@ -6,8 +6,13 @@
     </div>
     <div class="title">赞助方式</div>
     <ul class="support-list">
-        <a href="https://paypal.me/remingchan" target="_blank" class="support-item"><img src="../../assets/img/paypal.png" alt="paypal" width="100%" height="100%"></a>
-        <span class="support-item zfb"><i class="iconfont">&#xe665;<img class="zfb-qrcode" src="../../assets/img/zfb_qrcode.jpg" alt="zfb-qrcode"></i></span>
+      <a href="https://www.patreon.com/remingchan" target="_blank" class="support-item patreon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+          <rect width="7" height="38" fill="black"></rect>
+          <circle cx="25" cy="15" r="14" fill="#e85b46"></circle>
+        </svg>
+      </a>
+      <span class="support-item zfb"><i class="iconfont">&#xe665;<img class="zfb-qrcode" src="../../assets/img/zfb_qrcode.jpg" alt="zfb-qrcode"></i></span>
     </ul>
   </div>
 </template>
@@ -21,6 +26,22 @@
   @media only screen and (min-width: 768px) {
     .support-wrapper {
       width: 60%;
+      .patreon {
+        position: relative;
+        &:hover::after {
+          display: block!important;
+        }
+        &::after {
+          display: none;
+          content: 'jump to patreon';
+          position: absolute;
+          top: 60px;
+          left: -20px;
+          font-size: 15px;
+          color: #e85b46;
+          white-space: nowrap;
+        }
+      }
     }
   }
   .support-wrapper {
@@ -42,18 +63,21 @@
       line-height: 32px;
     }
     .support-list {
-      margin-top: 20px;
+      margin: 20px 0 0 10px;
       .support-item {
         display: inline-block;
-        width: 100px;
+        width: 40px;
         cursor: pointer;
+        vertical-align: top;
       }
       .zfb {
         position: relative;
         color: #06b4fd;
-        margin-left: 20px;
+        margin-left: 35px;
+        height: 40px;
+        line-height: 40px;
         i {
-          font-size: 30px;
+          font-size: 36px;
         }
         .zfb-qrcode {
           display: none;
