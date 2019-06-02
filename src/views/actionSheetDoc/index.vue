@@ -3,13 +3,13 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Action Sheet 动作板块" desc="用于弹出系统功能板块与用户交互"></doc-title>
-        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { ActionSheet } <span class="blue">from</span> 'atom-design';</doc-code>
-        <doc-code title="例子">// 按需引入<br/><span class="blue">ActionSheet</span>(options:Object);<br/>// 全部引入<br/><span class="yellow">this</span>.<span class="blue">$actionSheet</span>(options:Object);<br/><br/>// 基础用法<br/><span class="blue">ActionSheet</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }]<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>});<br/>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Actionsheet } <span class="blue">from</span> 'atom-design';</doc-code>
+        <doc-code title="例子">// 按需引入<br/><span class="blue">Actionsheet</span>(options:Object);<br/>// 全部引入<br/><span class="yellow">this</span>.<span class="blue">$actionSheet</span>(options:Object);<br/><br/>// 基础用法<br/><span class="blue">Actionsheet</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }]<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>});<br/>
         </doc-code>
     </div>
     <mobile routerName="actionSheet"></mobile>
   </div>
-  <doc-api :apiList="apiList" desc="格式： ActionSheet({cancelBtn: Boolean, list: Array}, callback)"></doc-api>
+  <doc-api :apiList="apiList" desc="格式： Actionsheet({cancelBtn: Boolean, list: Array}, callback)"></doc-api>
 </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
     return {
       apiList: [{
         name: 'list',
-        desc: '设置actionSheet的列表, 格式 [{text: String, style: String}, ...];text设置显示文本, style设置样式',
+        desc: '设置ActionSheet的列表, 格式 [{text: String, style: String}, ...];text设置显示文本, style设置样式',
         type: 'Array',
         default: '无'
       },

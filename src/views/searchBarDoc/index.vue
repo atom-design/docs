@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="SearchBar 搜索条" desc="用于搜索数据"></doc-title>
-        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { SearchBar } <span class="blue">from</span> 'atom-design';<br/>Vue.component(SearchBar.name, SearchBar);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Searchbar } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Searchbar.name, Searchbar);</doc-code>
         <doc-code title="例子">// 基本用法<br/><start-tag name="atom-search-bar" :attrs="[{key: 'placeholder', value: 'Please Input'}, {key: 'v-model', value: 'searchVal'}]"></start-tag><end-tag name="atom-search-bar"></end-tag><br/>// 无清空按钮<br/><start-tag name="atom-search-bar" :attrs="[{key: 'placeholder', value: 'Please Input'}, {key: ':isClear', value: 'false'}]"></start-tag><end-tag name="atom-search-bar"></end-tag><br/>// 自定义样式<br/><start-tag name="atom-search-bar" :attrs="[{key: 'placeholder', value: 'Please Input'}, {key: 'style', value: 'background: rgba(0, 0, 0, 0.8); color: white'}]"></start-tag><end-tag name="atom-search-bar"></end-tag><br/>
         </doc-code>
       </div>

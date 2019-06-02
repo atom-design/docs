@@ -3,7 +3,7 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Lazy Load 图片懒加载" desc="通过设置指令来懒加载图片"></doc-title>
-        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { LazyLoad } <span class="blue">from</span> 'atom-design';<br/>Vue.use(LazyLoad);</doc-code>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Lazyload } <span class="blue">from</span> 'atom-design';<br/>Vue.directive('lazyload', Lazyload);</doc-code>
         <doc-code title="例子">// 基本用法<br/><start-tag name="ul" :attrs="[]"></start-tag><br/> // 懒加载指令<br/>  <start-tag name="img" :attrs="[{key: 'v-for', value: '(item, index) in dataList'}, {key: ':key', value: 'index'}, {key: 'v-lazyload', value: '图片路径'}, {key: 'loading', value: 'loding.gif'}]"></start-tag><end-tag name="img"></end-tag><br/><end-tag name="ul"></end-tag><br/>// 设置未加载时的默认图片的样式<br/>img[loaded=false] {<br/>  width: 30px;<br/>  height: 200px;<br/>  margin: auto;<br/>}<br/>// 设置加载完成时图片样式<br/>img[loaded=true] {<br/>  width: 100%;<br/>  height: 200px;<br/>}</doc-code>
       </div>
       <mobile routerName="lazyLoad"></mobile>

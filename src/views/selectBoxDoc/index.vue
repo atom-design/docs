@@ -3,13 +3,13 @@
     <div class="demo-wrapper clearfix">
       <div class="doc-demo">
         <doc-title title="Select Box 选择盒子" desc="用于提供给用户选择操作"></doc-title>
-        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { SelectBox } <span class="blue">from</span> 'atom-design';</doc-code>
-        <doc-code title="例子">// 按需引入<br/><span class="blue">SelectBox</span>(options:Object);<br/>// 全部引入<br/><span class="yellow">this</span>.<span class="blue">$selectBox</span>(options:Object);<br/><br/>// 基础用法<br/><span class="blue">SelectBox</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }]<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>});<br/>
+        <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Selectbox } <span class="blue">from</span> 'atom-design';</doc-code>
+        <doc-code title="例子">// 按需引入<br/><span class="blue">Selectbox</span>(options:Object);<br/>// 全部引入<br/><span class="yellow">this</span>.<span class="blue">$selectBox</span>(options:Object);<br/><br/>// 基础用法<br/><span class="blue">Selectbox</span>({<br/>  list: [{<br/>    text: '<span class="red">选择图片</span>'<br/>  },<br/>  {<br/>    text: '<span class="red">选择联系人</span>'<br/>  }]<br/>}, (msg, index)<span class="green"> => </span>{<br/>  // msg选中的文本,index选中的序号<br/>});<br/>
         </doc-code>
     </div>
     <mobile routerName="selectBox"></mobile>
   </div>
-  <doc-api :apiList="apiList" desc="格式： SelectBox({list: Array}, callback)"></doc-api>
+  <doc-api :apiList="apiList" desc="格式： Selectbox({list: Array}, callback)"></doc-api>
 </div>
 </template>
 

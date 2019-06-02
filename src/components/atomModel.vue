@@ -22,8 +22,8 @@
       <ellipse cx="150" cy="150" rx="120" ry="50" stroke="black" fill="transparent"/>
       <circle cx="140" cy="220" r="13" fill="url(#redGradient)" class="redRotate"></circle>
       <circle id="lightBlue" r="22" fill="url(#lightblueGradient)"></circle>
-      <circle cx="250" cy="80" r="20" fill="url(#yellowGradient)" class="yellowRotate"></circle>
       <circle cx="150" cy="137" r="35" fill="url(#blueGradient)" class="rotate"></circle>
+      <circle cx="250" cy="90" r="17" fill="url(#yellowGradient)" class="yellowRotate"></circle>
     </svg>
   </div>
 </template>
@@ -81,7 +81,7 @@ export default {
   transition: transform 1s linear;
 }
 svg:hover .yellowRotate {
-  transform: scale3d(1.5, 1.5, 1) translate3d(-200px, -10px, 0);
+  transform: scale3d(2, 2, 1) translate3d(-230px, -10px, 0);
 }
 svg:hover .redRotate {
   transform: scale3d(0.5, 0.5, 1) translate3d(300px, 100px, 0);

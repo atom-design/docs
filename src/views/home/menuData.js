@@ -126,7 +126,7 @@ export default [{
     }]
   },
   {
-    text: 'JS Plugin',
+    text: 'Directive',
     isChild: true,
     childs: [{
       text: 'Load More',
