@@ -4,8 +4,12 @@
       <atom-model class="atom-model"></atom-model>
       <div class="text-wrapper">
         <h1>Atom Design</h1>
-        <p>如果您喜欢可自定义的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套简单、易用的组件库。</p>
-        <div class="btn" @click="jumpMobile">立即体验</div>
+        <p>如果您喜欢可自定义的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套高效、灵活、易用的组件库。</p>
+        <div class="btn-group">
+           <div class="btn" @click="jumpMobile">立即体验</div>
+             <div class="star" @click="jumpGithub"><i class="iconfont">&#xe677;</i>&nbsp;Star</div>
+             <span class="star-num" v-text="starNum" v-show="starNum" @click="jumpStar"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -14,12 +18,33 @@
 <script type="text/javascript">
 import atomModel from '@/components/atomModel.vue'
 export default {
+  data () {
+    return {
+      starNum: null
+    }
+  },
   components: {
     atomModel
+  },
+  mounted () {
+    const xhr = new XMLHttpRequest()
+    xhr.open('get', ' https://api.github.com/repos/reming0227/atom-design', true)
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        this.starNum = JSON.parse(xhr.responseText).stargazers_count
+      }
+    }
+    xhr.send()
   },
   methods: {
     jumpMobile () {
       window.open('https://atom-design.github.io/mobile/#/')
+    },
+    jumpGithub () {
+      window.open('https://github.com/reming0227/atom-design')
+    },
+    jumpStar () {
+      window.open('https://github.com/reming0227/atom-design/stargazers')
     }
   }
 }
@@ -84,17 +109,68 @@ export default {
         line-height: 36px;
         color: #314659;
       }
-      .btn {
-        margin-top: 20px;
-        width: 100px;
-        height: 32px;
-        line-height: 32px;
-        text-align: center;
-        background: #0099FF;
-        color: white;
-        font-size: 14px;
-        border-radius: 6px;
+      .btn-group {
+        margin-top: 30px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        .btn {
+          width: 100px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #0099FF;
+          color: white;
+          font-size: 14px;
+          border-radius: 3px;
+        }
+        .star {
+          .iconfont {
+            font-size: 15px;
+          }
+          margin-left: 20px;
+          color: #333;
+          background: #f0f1f2;
+          height: 32px;
+          line-height: 32px;
+          padding: 0 8px;
+          border-radius: 3px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          font-weight: bold;
+          box-sizing: border-box;
+          &:hover {
+            color: #0099FF;
+          }
+        }
+        .star-num {
+          position: relative;
+          margin-left: 12px;
+          color: #333;
+          background: #f0f1f2;
+          padding: 5px 8px;
+          border-radius: 3px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+          font-weight: bold;
+          box-sizing: border-box;
+          &:hover {
+            color: #0099FF;
+          }
+          &::before {
+            content: " ";
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-right: none;
+            transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 45deg);
+            background: #fdfeff;
+          }
+        }
       }
     }
     .img-wrapper {
