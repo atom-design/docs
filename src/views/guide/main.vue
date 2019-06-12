@@ -147,8 +147,8 @@ export default {
           position: relative;
           margin-left: 12px;
           color: #333;
-          background: #f0f1f2;
-          padding: 5px 8px;
+          background: #fafbfc;
+          padding: 3px 5px;
           border-radius: 3px;
           border: 1px solid #ccc;
           font-size: 14px;
@@ -168,7 +168,7 @@ export default {
             border-top: none;
             border-right: none;
             transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 45deg);
-            background: #fdfeff;
+            background: #fafbfc;
           }
         }
       }
