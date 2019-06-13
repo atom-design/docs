@@ -4,7 +4,7 @@
       <atom-model class="atom-model"></atom-model>
       <div class="text-wrapper">
         <h1>Atom Design</h1>
-        <p>如果您喜欢可自定义的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套高效、灵活、易用的组件库。</p>
+        <p>如果您喜欢可定制的移动端组件库来开发你的产品，您可以选择Atom-Design。提供给Vue移动端开发者的一套高效、灵活、易用的组件库。</p>
         <div class="btn-group">
            <div class="btn" @click="jumpMobile">立即体验</div>
              <div class="star" @click="jumpGithub"><i class="iconfont">&#xe677;</i>&nbsp;Star</div>
@@ -139,9 +139,6 @@ export default {
           border: 1px solid #ccc;
           font-weight: bold;
           box-sizing: border-box;
-          &:hover {
-            color: #0099FF;
-          }
         }
         .star-num {
           position: relative;
@@ -154,9 +151,6 @@ export default {
           font-size: 14px;
           font-weight: bold;
           box-sizing: border-box;
-          &:hover {
-            color: #0099FF;
-          }
           &::before {
             content: " ";
             position: absolute;
