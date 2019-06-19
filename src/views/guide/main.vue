@@ -81,6 +81,9 @@ export default {
     .text-wrapper {
       margin-right: 80px;
       padding: 50px 0 0 50px;
+      .btn-group {
+        cursor: pointer;
+      }
     }
     .atom-model {
       display: inline-block;
@@ -111,7 +114,6 @@ export default {
       }
       .btn-group {
         margin-top: 30px;
-        cursor: pointer;
         display: flex;
         align-items: center;
         .btn {

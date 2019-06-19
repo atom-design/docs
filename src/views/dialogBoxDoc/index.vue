@@ -10,7 +10,7 @@
     <mobile routerName="dialogBox"></mobile>
   </div>
   <doc-api :apiList="apiList" desc="Dialog有三个方法,分别是 Dialog.alert( Title, Description, Config )、Dialog.confirm( Title, Description, Config )、Dialog.prompt( Title, Description, Config )。Title为标题,Description为描述信息,Config参数如下表："></doc-api>
-  <doc-api :isTitle="false" :apiList="btnApiList" desc="按钮配置表, 格式 {text: String, style: Stirng, actionStyle: Object, event: Function}"></doc-api>
+  <doc-api :isTitle="false" :apiList="btnApiList" desc="按钮配置表, 格式 {text: String, style: Object, actionStyle: Object, event: Function}"></doc-api>
 </div>
 </template>
 
@@ -49,7 +49,7 @@ export default {
       {
         name: 'style',
         desc: '按钮样式',
-        type: 'String',
+        type: 'Object',
         default: '无'
       },
       {

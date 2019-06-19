@@ -10,7 +10,7 @@
     <mobile routerName="picker"></mobile>
   </div>
   <doc-api :apiList="apiList" desc="格式： Picker({list: Array, cancelBtn: Object, submitBtn: Object})"></doc-api>
-  <doc-api :isTitle="false" :apiList="btnApiList" desc="按钮配置表, 格式 {text: String, style: Stirng, actionStyle: Object, event: Function}"></doc-api>
+  <doc-api :isTitle="false" :apiList="btnApiList" desc="按钮配置表, 格式 {text: String, style: Object, actionStyle: Object, event: Function}"></doc-api>
 </div>
 </template>
 
@@ -49,7 +49,7 @@ export default {
       {
         name: 'style',
         desc: '按钮样式',
-        type: 'String',
+        type: 'Object',
         default: '无'
       },
       {

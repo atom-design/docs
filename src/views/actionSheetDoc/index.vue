@@ -23,13 +23,13 @@ export default {
     return {
       apiList: [{
         name: 'list',
-        desc: '设置ActionSheet的列表, 格式 [{text: String, style: String}, ...];text设置显示文本, style设置样式',
+        desc: '设置ActionSheet的列表, 格式 [{text: String, style: Object}, ...];text设置显示文本, style设置样式',
         type: 'Array',
         default: '无'
       },
       {
         name: 'cancelBtn',
-        desc: '设置取消条目, 格式{text: String, style: String};text设置显示文本, style设置样式',
+        desc: '设置取消条目, 格式{text: String, style: Object};text设置显示文本, style设置样式',
         type: 'Object',
         default: '无'
       },

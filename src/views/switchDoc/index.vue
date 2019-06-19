@@ -34,12 +34,6 @@ export default {
         desc: '设置switch的主颜色',
         type: 'String',
         default: '#108ee9'
-      },
-      {
-        name: 'style',
-        desc: '自定义样式',
-        type: 'String',
-        default: '无'
       }]
     }
   },

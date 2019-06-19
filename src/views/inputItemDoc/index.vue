@@ -54,14 +54,14 @@ export default {
         default: 'left'
       },
       {
-        name: 'actionStyle',
-        desc: '设置点击效果',
+        name: 'inputStyle',
+        desc: '设置input样式',
         type: 'Object',
-        default: '{background: "#f7f8f9"}'
+        default: '无'
       },
       {
         name: 'style',
-        desc: '自定义样式',
+        desc: '自定义输入条样式',
         type: 'String',
         default: '无'
       }]

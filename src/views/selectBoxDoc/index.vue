@@ -23,7 +23,7 @@ export default {
     return {
       apiList: [{
         name: 'list',
-        desc: '设置selectBox的列表, 格式 [{text: String, style: String}, ...];text设置显示文本, style设置样式',
+        desc: '设置selectBox的列表, 格式 [{text: String, style: Object}, ...];text设置显示文本, style设置样式',
         type: 'Array',
         default: '无'
       },
