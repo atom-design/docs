@@ -55,7 +55,7 @@ export default {
       },
       {
         name: 'pagination',
-        desc: '是否显示分页',
+        desc: '是否显示分页（可通过v-model绑定轮播序号来自定义分页样式）',
         type: 'Boolean',
         default: 'false'
       },
