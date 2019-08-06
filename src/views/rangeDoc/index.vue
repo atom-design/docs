@@ -4,7 +4,7 @@
       <div class="doc-demo">
         <doc-title title="Range 区域选择" desc="用于在指定区间里进行滑动选择"><a class="a-link" href="https://atom-design.github.io/mobile/#/range/">此测试案例请在移动模式/设备打开</a></doc-title>
         <doc-code title="按需引入（全部引入无需此步骤）"><span class="blue">import</span> { Range } <span class="blue">from</span> 'atom-design';<br/>Vue.component(Range.name, Range);</doc-code>
-        <doc-code title="例子">// 基本用法<br/><start-tag name="atom-range" :attrs="[{key: 'v-model', value: 'RangeVal'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>// 设置区间<br/><start-tag name="atom-range" :attrs="[{key: ':min', value: '10'}, {key: ':max', value: '90'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>// 取消提示<br/><start-tag name="atom-range" :attrs="[{key: ':isIndicator', value: 'false'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>// 自定义颜色<br/><start-tag name="atom-range" :attrs="[{key: 'color', value: '#dd2622'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>
+        <doc-code title="例子">// 基本用法<br/><start-tag name="atom-range" :attrs="[{key: 'v-model', value: 'RangeVal'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>// 设置区间<br/><start-tag name="atom-range" :attrs="[{key: ':min', value: '10'}, {key: ':max', value: '90'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>// 取消提示<br/><start-tag name="atom-range" :attrs="[{key: ':isIndicator', value: 'false'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>// 自定义<br/><start-tag name="atom-range" :attrs="[{key: 'color', value: '#dd2622'}, {key: ':isLight', value: 'true'}]"></start-tag><end-tag name="atom-range"></end-tag><br/>
         </doc-code>
       </div>
       <mobile routerName="range"></mobile>
@@ -52,6 +52,12 @@ export default {
         desc: '修改颜色',
         type: 'String',
         default: '#108ee9'
+      },
+      {
+        name: 'isLight',
+        desc: '是否高亮',
+        type: 'Boolean',
+        default: 'false'
       }]
     }
   },
