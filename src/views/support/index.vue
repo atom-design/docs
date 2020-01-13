@@ -6,12 +6,6 @@
     </div>
     <div class="title">赞助方式</div>
     <ul class="support-list">
-      <a href="https://www.patreon.com/remingchan" target="_blank" class="support-item patreon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-          <rect width="7" height="38" fill="black"></rect>
-          <circle cx="25" cy="15" r="14" fill="#e85b46"></circle>
-        </svg>
-      </a>
       <span class="support-item zfb"><i class="iconfont">&#xe665;<img class="zfb-qrcode" src="../../assets/img/zfb_qrcode.jpg" alt="zfb-qrcode"></i></span>
     </ul>
   </div>
@@ -66,31 +60,29 @@
       margin: 20px 0 0 10px;
       .support-item {
         display: inline-block;
-        width: 40px;
         cursor: pointer;
         vertical-align: top;
       }
       .zfb {
         position: relative;
         color: #06b4fd;
-        margin-left: 35px;
         height: 40px;
         line-height: 40px;
         i {
           font-size: 36px;
         }
         .zfb-qrcode {
-          display: none;
+          opacity: 0;
           position: absolute;
-          top: 80px;
-          left: 50%;
-          transform: translate3d(-50%, 0, 0);
+          top: 0;
+          left: 150%;
           width: 200px;
           height: 200px;
           box-shadow: 0 0 10px #ccc;
+          transition: opacity 0.3s ease;
         }
         &:hover .zfb-qrcode {
-          display: block;
+          opacity: 1;
         }
       }
     }
